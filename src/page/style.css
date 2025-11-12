@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Elms+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #DAD8FD;
+     font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+   
+    background-size: cover;
+}
+.bg-body{
+ /* background: url('bg.webp'); */
+}
+.bg{
+    min-height: 100vh;
+    background-size: cover;
+}
+.header-bg{
+    background-color: transparent;
+}
+.column-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.container{
+    max-width: 1170px;
+     margin: 0 auto;
+     padding: 50px;
+}
+.header_wrapper{
+   min-height: 60px;
+   background-color: rgb(253, 253, 253);
+   width: 70%;
+   margin: 0 auto;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    height: 60px;
+    ;
+}
+.nav_item{
+    font-size: 1.3rem;
+    color: rgb(85, 85, 85);
+}
+.nav_item a{
+     color: rgb(85, 85, 85);
+     text-decoration: none;
+}
+.nav_item a:hover{
+     color: #333;
+     text-decoration: none;
+}
+.active{
+    color: rgb(66, 66, 66);
+    text-decoration:underline  dashed ;
+    transition-duration: 2s;
+}
+
+.form{
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 100%;
+    width: 600px;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    margin: 0 auto;
+    font-family: ElmsSans, sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    padding: 20px;
+
+}
+select{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: "Montserrat";
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
+select:hover {
+cursor: pointer;
+}
+
+option:checked {
+  background-color: #9894F2;
+  color: #18191C;
+}
+
+
+label{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.btn{
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #6664E2;
+    border: none;
+    margin: 30px auto;
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in;
+    transition: 0.5s ease;
+
+}
+.btn_stop{
+    background-color: #ffffff;
+    color: #333;
+    width: 100%;
+    margin: 0;
+}
+.btn_cansle{
+    background-color: #860a0a;
+    width: 100%;
+     margin: 0;
+}
+
+
+.btn:hover{
+    box-shadow: 0 0 15px 5px rgba(117, 40, 185, 0.3);
+      transition: 0.5s ease;
+}
+.btn:active{
+    box-shadow: 0 0 15px 5px rgba(117, 40, 185, 0.3);
+    color:#6664E2; 
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+.exercises_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.exercise_item{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+    max-width: 250px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.exercise_item:hover{
+    transform:scale(0.98);
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-family: "Montserrat";
+}
+.num{
+    background-color: #d7d5f5;
+    padding: 5px 15px;
+    border-radius: 100%;
+}
+.time{
+    background-color: #F5F5F5;
+    padding: 2px 10px;
+    border-radius: 10px;
+    border: 3px solid rgb(230, 230, 230);
+}
+.exercise_img{
+    background-color: #b8b7b741;
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.exercises_name{
+    padding-bottom: 5px;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.timer{
+    background-color: #f0f0f0;
+    padding: 40px;
+    border-radius: 15px;
+    color: #747474;
+    font-size: 3rem;
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+    margin-top: 110px;
+}
+.exercis{
+     background-color: #F5F5F5;
+     max-width: 100%;
+     border-radius: 15px;
+     padding: 25px;
+}
+.exercis_title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.exercis_desk{
+    font-size: 1rem;
+}
+.exercis_gif{
+    margin: 15px auto;
+
+}
+.exercis_gif img{
+   height: auto;
+
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+
+}
+.actions_btns{
+    display: flex;
+    max-width: 100%;
+    gap: 10px;
+ 
+}
+.summary_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.summary{
+    background-color: #f3f3f3;
+    width: 600px;
+    height: 300px;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+  
+}
+.summary p{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.summary-info{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.summary-info span{
+    font-weight: bold;
+    color: #333;
+}
