@@ -16,6 +16,9 @@ body{
 .bg-body{
  /* background: url('bg.webp'); */
 }
+.hidden{
+    display: none !important;
+}
 .bg{
     min-height: 100vh;
     background-size: cover;
@@ -114,25 +117,28 @@ label{
     border-radius: 10px;
     color: white;
     background-color: #6664E2;
-    border: none;
-    margin: 30px auto;
+    border: none;    
     font-size: 1.2rem;
     font-family: "Montserrat";
     cursor: pointer;
     transition: box-shadow 0.5s ease-in;
-    transition: 0.5s ease;
-
+    transition: 0.9s opacity ease-in;
+}
+.btn-center{
+    margin: 30px auto;
 }
 .btn_stop{
     background-color: #ffffff;
     color: #333;
     width: 100%;
     margin: 0;
+   transition: 1s easee-in;
 }
 .btn_cansle{
     background-color: #860a0a;
     width: 100%;
-     margin: 0;
+    margin: 0;
+    transition: 0.9s easee-in-out;
 }
 
 
@@ -151,6 +157,7 @@ label{
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 15px;
     flex-wrap: wrap;
+    transition: 0.9s ease-in-out;
 }
 
 .exercise_item{
@@ -216,7 +223,8 @@ label{
     font-weight: bold;
     min-width: 200px;
     text-align: center;
-    margin-top: 110px;
+    transition: 0.9s ease-in-out;
+    
 }
 .exercis{
      background-color: #F5F5F5;
@@ -247,6 +255,7 @@ label{
     display: flex;
     max-width: 100%;
     gap: 10px;
+   
  
 }
 .summary_wrapper{

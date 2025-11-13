@@ -73,7 +73,7 @@ return(
                         <option value="press">Пресс + кор</option>
                     </select>
 
-                    <button type="submit" name="generate" className="btn"> Сгенерировать тренировку</button>
+                    <button type="submit" name="generate" className="btn btn-center"> Сгенерировать тренировку</button>
 
                 </form>
           </div>  
