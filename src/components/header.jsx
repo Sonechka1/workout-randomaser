@@ -9,7 +9,7 @@ function Header() {
             <ul className="nav header_nav">
                     <li className="nav_item"><a href="#">О проекте</a></li>
                     <li className="nav_item active"><a onClick={()=>navigate("/")}>Главная</a></li>
-                    <li className="nav_item"><a href="#">Контакты</a></li>
+                    <li className="nav_item"><a onClick={()=>navigate("/history")}>История тренировок</a></li>
             </ul>
         </div>
     </header>

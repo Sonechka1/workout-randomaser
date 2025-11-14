@@ -57,6 +57,7 @@ body{
 .nav_item{
     font-size: 1.3rem;
     color: rgb(85, 85, 85);
+    cursor: pointer;
 }
 .nav_item a{
      color: rgb(85, 85, 85);
@@ -123,6 +124,9 @@ label{
     cursor: pointer;
     transition: box-shadow 0.5s ease-in;
     transition: 0.9s opacity ease-in;
+}
+.bottom{
+    margin-bottom: 15px ;
 }
 .btn-center{
     margin: 30px auto;
@@ -195,6 +199,8 @@ label{
     border-radius: 10px;
     border: 3px solid rgb(230, 230, 230);
 }
+
+
 .exercise_img{
     background-color: #b8b7b741;
     max-width: 100%;
@@ -267,7 +273,7 @@ label{
 .summary{
     background-color: #f3f3f3;
     width: 600px;
-    height: 300px;
+    height: 350px;
     padding: 40px;
     border-radius: 15px;
     text-align: center;
@@ -284,4 +290,30 @@ label{
 .summary-info span{
     font-weight: bold;
     color: #333;
+}
+
+.history-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.history-item{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    list-style: none;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.history-container h1{
+    text-align: center;
+    margin-bottom: 30px;
 }

@@ -3,43 +3,49 @@ import { useNavigate } from "react-router-dom";
 import { exercises } from "../data/exercises";
 import { useState } from "react";
 import './style.css';
-import Header from "../components/header";
 import bg from '../img/bg.webp';
 function HomePage() {
+
   const navigate = useNavigate();
+
   const [goal, setGoal] = useState("");
   const [level, setLevel] = useState("");
   const [type, setType] = useState("");
-  
-  // --- handleSubmit пишем здесь ---
- 
-const handleSubmit = (e) => {
-  e.preventDefault();
 
-  console.log("goal:", goal, "level:", level, "type:", type);
+  // Функция для перемешивания массива
+  const shuffleArray = (array) => {
+    const arr = [...array];
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  };
 
-  if (!goal || !level || !type) {
-    alert("Пожалуйста, выберите все параметры!");
-    return;
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  // дальше фильтруем упражнения и navigate
+    if (!goal || !level || !type) {
+      alert("Пожалуйста, выберите все параметры!");
+      return;
+    }
 
-
-
-    // Фильтруем упражнения
+    // Фильтрация упражнений по параметрам
     const filtered = exercises.filter(
-      ex => ex.goal === goal && ex.level === level && ex.type === type
+      (ex) => ex.goal === goal && ex.level === level && ex.type === type
     );
 
-    const workout = filtered.length
-      ? filtered.sort(() => 0.5 - Math.random()).slice(0, 5)
-      : exercises.slice(0, 5);
+    // Рандомно выбираем 5 упражнений
+    const workout = filtered.length > 0
+      ? shuffleArray(filtered).slice(0, 5)
+      : shuffleArray(exercises).slice(0, 5);
 
-    // Навигация на WorkoutPage с state
+    console.log("Фильтр:", filtered.map(e => e.name));
+    console.log("Сгенерированная тренировка:", workout.map(e => e.name));
+
+    // Переход на WorkoutPage с передачей state
     navigate("/workout", { state: { workout, level } });
   };
-  console.log("WorkoutPage: level =", level);
   // --- конец handleSubmit ---
   
 return(
