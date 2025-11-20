@@ -317,3 +317,58 @@ label{
     text-align: center;
     margin-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+  /* стили для мобильных */
+
+  .nav_item {
+    font-size: 0.9rem;
+    color: rgb(85, 85, 85);
+  }
+  .mobile_hidden{
+    display: none;
+  }
+  .column-2{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+  }
+  .part2 {
+    align-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.timer {
+    background-color: #ffffff;
+    padding: 30px;
+    font-size: 1.4rem;
+
+}
+.num {
+    padding: 5px 14px;
+}
+.summary {
+    height: fit-content;
+}
+.summary p {
+    font-size: 1.5rem;
+}
+.summary-info {
+    font-size: 1rem;
+
+}
+
+.btn {
+    font-size: 1rem;
+}
+
+.summary_wrapper {
+    height: 50vh;
+}
+
+.container {
+    max-width: 100%;
+}
+
+}

@@ -63,8 +63,8 @@ export const exercises = [
     type: "Full"
   },
   {
-    name: "Махи ногой назад",
-    description: "Стоя на четвереньках, поднимайте ногу вверх.",
+    name: "Махи ногой вперед",
+    description: "Стоя прямо, поднимайте ногу вверх.",
     img: "/img/gif/maxNogs.gif",
     staticImg: "/img/prev/maxNoga_prev.png",
     goal: "power",
