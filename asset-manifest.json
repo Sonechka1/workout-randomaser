@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/workout-randomaser/static/css/main.d7f4cc9d.css",
-    "main.js": "/workout-randomaser/static/js/main.9153b8d2.js",
+    "main.js": "/workout-randomaser/static/js/main.68ad3e5c.js",
     "static/js/453.d77b8130.chunk.js": "/workout-randomaser/static/js/453.d77b8130.chunk.js",
     "static/media/bg.webp": "/workout-randomaser/static/media/bg.8bd4da61fdacdb91b00a.webp",
     "index.html": "/workout-randomaser/index.html",
     "main.d7f4cc9d.css.map": "/workout-randomaser/static/css/main.d7f4cc9d.css.map",
-    "main.9153b8d2.js.map": "/workout-randomaser/static/js/main.9153b8d2.js.map",
+    "main.68ad3e5c.js.map": "/workout-randomaser/static/js/main.68ad3e5c.js.map",
     "453.d77b8130.chunk.js.map": "/workout-randomaser/static/js/453.d77b8130.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d7f4cc9d.css",
-    "static/js/main.9153b8d2.js"
+    "static/js/main.68ad3e5c.js"
   ]
 }
