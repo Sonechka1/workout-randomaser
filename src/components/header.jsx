@@ -4,14 +4,20 @@ import { useNavigate } from "react-router-dom";
 function Header() {
     const navigate = useNavigate();
     return(
-    <header >
-        <div className="header_wrapper">
-            <ul className="nav header_nav">
-                    <li className="nav_item mobile_hidden" ><a href="#">О проекте</a></li>
-                    <li className="nav_item active"><a onClick={()=>navigate("/")}>Главная</a></li>
-                    <li className="nav_item"><a onClick={()=>navigate("/history")}>История тренировок</a></li>
-            </ul>
-        </div>
+   <header>
+      <div className="header_wrapper">
+        <ul className="nav header_nav">
+          <li className="nav_item mobile_hidden">
+            <span onClick={() => navigate("/")}>О проекте</span>
+          </li>
+          <li className="nav_item active">
+            <span onClick={() => navigate("/")}>Главная</span>
+          </li>
+          <li className="nav_item">
+            <span onClick={() => navigate("/history")}>История тренировок</span>
+          </li>
+        </ul>
+      </div>
     </header>
     )
 }

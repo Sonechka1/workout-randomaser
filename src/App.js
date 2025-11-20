@@ -10,7 +10,7 @@ import WorkoutPage from './page/WorkoutPage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/workout-randomaser">
       <div style={{ backgroundImage: `url(${bg})` }} className="bg">
         <Header></Header>
         <Routes>
