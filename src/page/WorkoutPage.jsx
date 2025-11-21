@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import './style.css';
 import { exercises } from "../data/exercises";
+import restImg from "../assets/img/rest.jpg";
 
 function WorkoutPage() {
 
@@ -15,13 +16,13 @@ function WorkoutPage() {
     const initialWorkout = state?.workout || []; // если пришёл массив — используем его   
     const [currentWorkout, setCurrentWorkout] = useState(initialWorkout);
     const levelTimes = {
-        beginner: 5,
+        beginner: 60,
         medium: 100,
         advanced: 180
     }
 
     const restTimes ={
-        beginner: 3,
+        beginner: 35,
         medium: 25,
         advanced: 15
     }
@@ -142,9 +143,17 @@ function WorkoutPage() {
                         <div className="exercis_desk">{ isResting ? '' : currentWorkout[currentIndex]?.description}</div>
                         {currentWorkout[currentIndex]?.name === undefined && <div className="exercis_desk">{message}</div>}
                         <div className="exercis_gif">
-                        <img src={ 
-                            isResting ? "/img/rest.jpg"
-                            : isRunning === true? currentWorkout[currentIndex]?.img : currentWorkout[currentIndex]?.staticImg} alt="" />
+                       <img
+                                src={
+                                    isResting
+                                    ? restImg
+                                    : isRunning
+                                    ? currentWorkout[currentIndex]?.img
+                                    : currentWorkout[currentIndex]?.staticImg
+                                }
+                                alt=""
+                                />
+
                             
                             
                             
