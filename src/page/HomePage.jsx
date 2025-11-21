@@ -62,7 +62,7 @@ return(
                         <option value="endurance">Выносливость</option>
                     </select>
 
-                    <label htmlFor="level" >Ваша уровень</label>
+                    <label htmlFor="level" >Ваш уровень</label>
                     <select name="level" id="level" value={level} onChange={e => setLevel(e.target.value)}>
                         <option value="" selected >Выберете уровень тренировки</option>
                         <option value="beginner">Начинающий</option>
