@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/workout-randomaser/static/css/main.d7f4cc9d.css",
+    "main.css": "/workout-randomaser/static/css/main.dc955f67.css",
     "main.js": "/workout-randomaser/static/js/main.ba517a1c.js",
     "static/js/453.21c7b5f4.chunk.js": "/workout-randomaser/static/js/453.21c7b5f4.chunk.js",
     "static/media/burpiBezPrujka.gif": "/workout-randomaser/static/media/burpiBezPrujka.f69fa109a0980d0df25c.gif",
@@ -43,12 +43,12 @@
     "static/media/pricedPrujok_prev.png": "/workout-randomaser/static/media/pricedPrujok_prev.ae99e71d7b41a2cc5568.png",
     "static/media/vupadNapadi_prev.png": "/workout-randomaser/static/media/vupadNapadi_prev.79f71f87cb756080c096.png",
     "index.html": "/workout-randomaser/index.html",
-    "main.d7f4cc9d.css.map": "/workout-randomaser/static/css/main.d7f4cc9d.css.map",
+    "main.dc955f67.css.map": "/workout-randomaser/static/css/main.dc955f67.css.map",
     "main.ba517a1c.js.map": "/workout-randomaser/static/js/main.ba517a1c.js.map",
     "453.21c7b5f4.chunk.js.map": "/workout-randomaser/static/js/453.21c7b5f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7f4cc9d.css",
+    "static/css/main.dc955f67.css",
     "static/js/main.ba517a1c.js"
   ]
 }
